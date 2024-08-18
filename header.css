@@ -1,0 +1,147 @@
+.the-head {
+  display: flex;
+  flex-direction: row;
+  height: 55px;
+  justify-content: space-between;
+  
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 55px;
+  background-color: white;
+
+  border-bottom-width: 1px;
+  border-bottom-style: solid;
+  border-bottom-color: rgb(223, 223, 223);
+
+  z-index: 100;
+}
+.left-section {
+  display: flex;
+}
+.menu-icon {
+  width: 24px;
+  margin-right:24px;
+  margin-left: 24px;
+}
+.youtube-logo {
+  width: 90px;
+}
+
+.middle-section {
+  flex: 1;
+  max-width: 500px;
+  margin-left: 70px;
+  margin-right: 35px;
+  display: flex;
+  align-items: center;
+}
+.search-bar {
+  flex: 1;
+  height: 36px;
+  font-size: 16px;
+  border-width: 1px;
+  border-style: solid;
+  border-color: rgb(204, 204, 204);
+  border-radius: 3px;
+  padding-left: 10px;
+  width: 0;
+}
+.search-bar::placeholder {
+  font-family: Arial;
+  font-size: 18px;
+}
+.search-icon-pic,
+.voice-search-icon-pic {
+  width: 25px;
+}
+.search-button {
+  width: 70px;
+  height: 40px;
+  background-color: rgb(245, 245, 245);
+  border-width: 1px;
+  border-style: solid;
+  border-color:rgb(204, 204, 204);
+  margin-left: -1px;
+  margin-right: 7px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  position: relative;
+}
+.search-button .tooltip,
+.voice-button .tooltip {
+  position: absolute;
+  background-color: gray;
+  color: white;
+  font-family: Arial;
+  font-size: 11px;
+  padding-left: 5px;
+  padding-right: 5px;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  border-radius: 3px;
+  bottom: -26px;
+  opacity: 0;
+  transition: opacity 0.2s;
+  pointer-events: none;
+}
+.search-button:hover .tooltip,
+.voice-button:hover .tooltip {
+  opacity: 1;
+ 
+}
+
+.voice-button {
+  width: 37px;
+  height: 37px;
+  border: none;
+  border-radius: 19px;
+  background-color:rgb(245, 245, 245) ;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  
+}
+.right-section {
+  width: 200px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  padding-right: 25px;
+  flex-shrink: 0;
+}
+.upload-icon {
+  width: 25px;
+}
+.youtube-apps-icon {
+  width: 25px;
+}
+.notifications-icon {
+  width: 25px;
+}
+.notifications-counter {
+  position: relative;
+}
+.notifications-counter-icon {
+  position: absolute;
+  color: white;
+  font-family: Arial;
+  font-size: 12px;
+  background-color: rgb(185, 27, 27);
+  top: -2px;
+  right: -7px;
+  padding-left: 6px;
+  padding-right: 6px;
+  padding-top: 2px;
+  padding-bottom: 2px;
+  border-radius: 10px;
+
+}
+.account-pic {
+  width: 32px;
+  border-radius: 16px;
+}
